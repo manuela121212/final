@@ -8,3 +8,4 @@ class Pilotos(models.Model):
     campeonatos = models.CharField(max_length=10)
 
 
+ 
