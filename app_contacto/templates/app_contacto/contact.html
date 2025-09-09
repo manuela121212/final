@@ -1,0 +1,82 @@
+{% extends "app_home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Comparte tus preguntas sobre la Fórmula 1</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Información de contacto</h3>
+              <br>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Celular</h4>
+                  <p>323 404 7504</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>manuela180707@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Escribe tu mensaje</h3>
+
+              <form action="/contacto/respuesta_contacto/" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"> {% csrf_token %}
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required="True">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required="True">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="mensaje" rows="6" placeholder="Mensaje" required="True"></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Cargando</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Tu mensaje ha sido enviado</div>
+                    <button type="submit" class="btn">Enviar</button>
+                  </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  {% endblock %}

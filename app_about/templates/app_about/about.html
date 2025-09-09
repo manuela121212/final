@@ -1,0 +1,204 @@
+{% extends "app_home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Historia</h2>
+        <p>La Fórmula 1 se formó como una competición del Campeonato Mundial en 1950, y la primera carrera tomó lugar en el Circuito de Silverstone, en Inglaterra.</p>
+      </div><!-- End Section Title -->
+      <hr style="color: red;">
+      <br>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Intro + Photo -->
+        <div class="row align-items-center justify-content-between gy-5 mb-5">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+            <div class="intro-content">
+              <h2 class="headline">Primeros Gran Premios</h2>
+              <p class="lead">
+                El concepto de "Gran Premio" se originó en Francia en 1906 con el Gran Premio de Francia en Le Mans. Estas primeras carreras eran eventos nacionalistas que se realizaban en carreteras abiertas y evolucionaron de carreras de larga distancia a pruebas de resistencia para los pilotos y sus autos.
+              </p>
+              <p>
+                La Federación Internacional del Automóvil (FIA) se fundó en 1904 y jugó un papel crucial en la estandarización de reglas y en la sanción de las carreras de Fórmula 1. 
+              </p>
+
+              <div class="cta-group">
+                <a href="https://youtu.be/3rqSKgU-1Lo?si=n7oD35Tg_UCyZoMk" target="_blank" class="btn-ghost">
+                  Conoce más <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+            <figure class="profile-figure text-center text-lg-end">
+              <img src="{% static 'app_home/img/gp.jpg' %}"class="img-fluid profile-photo">
+            </figure>
+          </div>
+        </div>
+        <!-- End Intro + Photo -->
+
+        <!-- Journey Timeline -->
+        <div class="mb-5">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>Campeón 1950</time>
+                <h4>Giuseppe 'Nino' Farina</h4>
+                <p>Italiano. También ganador del primer Gran Premio</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>Campeón 1951</time>
+                <h4>Juan Manuel Fangio</h4>
+                <p>Argentino. Uno de los más destacados, habiendo logrado cinco campeonatos</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>Campeón 1952</time>
+                <h4>Alberto Ascari</h4>
+                <p>Italiano. Uno de las primeras figuras de la Scuderia Ferrari</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>Campeón 1953</time>
+                <h4>Alberto Ascari</h4>
+                <p>Con dos victorias seguidas, fue el primer piloto en tener una racha</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- End Journey Timeline -->
+        <hr style="color: red;">
+
+        <!-- Quote -->
+        <blockquote class="personal-quote text-center mb-5" data-aos="fade-down" data-aos-delay="200">
+          <p>"You must always strive to be the best, but you must never believe that you are"</p>
+          <br>
+          <p>Juan Manuel Fangio</p>
+        </blockquote>
+        <!-- End Quote -->
+         <hr style="color: red;">
+
+      </div>
+        
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Un deporte en equipo</h2>
+        <p>Hay que serlo para cambiar las cuatro ruedas de un carro en menos de dos segundos. Cada escudería cuenta con aproximadamente 70 personas que viajan a cada Gran Premio.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Pilotos</h3>
+              <p>Dos pilotos titulares. Compañeros y rivales</p>
+              <span class="text-end d-block"></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>Mecánicos</h3>
+              <p>Se encargan de las paradas de pits, preparación del carro y reparaciones</p>
+              <span class="text-end d-block"></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>Ingenieros de pista</h3>
+              <p>Se encargan de la estrategia, telemetría y la configuración del carro</p>
+              <span class="text-end d-block"></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>Director de equipo</h3>
+              <p>El líder máximo en la pista y en la fábrica</p>
+              <span class="text-end d-block"></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="avatars d-flex align-items-center">
+              <img src="{% static 'app_home/img/inter.png' %}" alt="Avatar 4" class="rounded-circle" loading="lazy">
+              <img src="{% static 'app_home/img/wet.png' %}" alt="Avatar 4" class="rounded-circle" loading="lazy">
+              <img src="{% static 'app_home/img/soft.png' %}" alt="Avatar 1" class="rounded-circle" loading="lazy">
+              <img src="{% static 'app_home/img/medium.png' %}" alt="Avatar 2" class="rounded-circle" loading="lazy">
+              <img src="{% static 'app_home/img/hard.png' %}" alt="Avatar 3" class="rounded-circle" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row counters">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <h2><span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span></h2>
+                <p>Carreras en el año</p>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <h2><span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span></h2>
+                <p>Países</p>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                <h2><span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span></h2>
+                <p>Continentes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Stats Section -->
+  
+{% endblock %}

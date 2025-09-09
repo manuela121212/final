@@ -1,0 +1,41 @@
+{% extends "app_home/base.html" %}
+
+{% load static %}
+
+{% block content %}
+    
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pilotos más notables</h2>
+        <p>Pasados y actuales. Conócelos.</p>
+      </div><!-- End Section Title -->
+
+      {% for i in piloto %}
+      <div class="container mb-5" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-content">
+                <h3>{{i.nombre}}</h3>
+                <p>{{i.equipo}}</p>
+                <div class="image-wrapper">
+                <img src="{{i.imagen.url}}" class="img-fluid">
+                </div>
+                <br>
+                <p>Campeonatos ganados: {{i.campeonatos}}</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+          
+    {% endfor %}
+    </section><!-- /Services Section -->
+    
+
+{% endblock %}
